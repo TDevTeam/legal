@@ -1,13 +1,15 @@
 .navigationbar{
     margin-top: 20px;
+    margin-left: 40px;
 }
 .div1{
     max-width: fit-content;
 }
 
-html {
+.hr{
     margin-left: 40px;
 }
+
 
 .center{
     text-align: center;
@@ -20,6 +22,7 @@ html {
 
 .lg{
     width: 40vw;
-    margin-left: 30vw + -40px;
+    margin-left: 30vw;
+    margin-right: 30vw;
     margin-top: 20px;
 }
