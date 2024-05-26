@@ -26,3 +26,7 @@
     margin-right: 30vw;
     margin-top: 20px;
 }
+
+.a100vh{
+    min-height: 60vh;
+}
