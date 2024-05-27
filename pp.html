@@ -9,35 +9,9 @@
   </head>
 
   <body data-bs-theme="dark">
-    <style>
-      pre{
-        white-space:pre-wrap;
-      }
-      .fixed-button {
-        position: fixed;
-        bottom: 20px;
-        left: 80%;
-        margin-left: 100px;
-        transform: translateX(-50%);
-        background-color: #333;
-        padding: 10px 20px;
-        border-radius: 5px;
-      }
-  
-      .fixed-button a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-      }
-      .fixed-button.hidden {
-        opacity: 0;
-        pointer-events: none;
-      }
-    </style>
-    <div class="fixed-button">
+    <button class="fixed-button">
       <a href="#legal">Skip to Legal</a>
-    </div>
+    </button>
     <div class="div1">
       <ul class="navigationbar nav nav-underline">
           <li class="nav-item"><a class="nav-link disabled" style="color: #FFFFFF;font-weight: bold;" href="/index.html">Legal            </a></li>
@@ -108,93 +82,53 @@ We are committed to resolving any issues promptly and to your satisfaction. Your
       6.1 If you have any queries or concerns about our privacy practices, please contact us. 
       We are committed to resolving any issues promptly and to your satisfaction.
     </pre>
+    
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>The Dev Team <span>Legal</span></h3>
+
+				<p class="footer-links">
+					<a href="https://devteamit.com" class="link-1">Main Site</a>
+					
+					<a href="https://devteamit.com/legal">Home</a>
+				
+					<a href="https://devteamit.com/legal/pp.html">Privacy Policy</a>
+				
+					<a href="https://devteamit.com/legal/tos.html">Terms Of Service</a>
+				</p>
+
+				<p class="footer-company-name">The Dev Team © 2024</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>Questions or Concerns?</p>
+				</div>
+
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:legal@devteamit.com">legal@devteamit.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About</span>
+          The Dev Team is a company internatinally based that provides IT services to worldwide.
+				</p>
+
+			</div>
+
+		</footer>
   </body>
-  <style>
-    .container {
-       max-width: 100%;
-       margin-left: auto;
-       margin-right: auto;
-     }
-   
-    .text-center {
-       text-align: center;
-     }
-    .text-white {
-       color: #ffffff;
-     }
-    .bg-blue-500 {
-       background-color: #3f51b5;
-     }
-   
-   
-    .d-flex {
-       display: flex;
-     }
-    .justify-content-center {
-       justify-content: center;
-     }
-   
-    .text-uppercase {
-       text-transform: uppercase;
-     }
-    .font-weight-bold {
-       font-weight: bold;
-     }
-   
-    .hr {
-       border-top: 1px solid currentColor;
-     }
-   
-    .text-center {
-       text-align: center;
-     }
-   
-   </style>
-   </head>
-   <body>
-   
-   <div class="container my-5">
-     <footer class="text-center text-white bg-blue-500">
-       <div class="container">
-         <section class="mt-5">
-           <div class="row text-center d-flex justify-content-center pt-5">
-             <div class="col-md-2">
-               <h6 class="text-uppercase font-weight-bold">
-                 <a href="https://devteamit.com" class="text-white">Main Site</a>
-               </h6>
-             </div>
-             <div class="col-md-2">
-               <h6 class="text-uppercase font-weight-bold">
-                 <a href="https://devteamit.com/legal" class="text-white">Home</a>
-               </h6>
-             </div>
-             <div class="col-md-2">
-               <h6 class="text-uppercase font-weight-bold">
-                 <a href="https://devteamit.com/legal/pp.html" class="text-white">
-                   Privacy Policy</a>
-               </h6>
-             </div>
-             <div class="col-md-2">
-               <h6 class="text-uppercase font-weight-bold">
-                 <a href="https://devteamit.com/legal/tos.html" class="text-white">Terms of Service</a>
-               </h6>
-             </div>
-             <div class="col-md-2">
-               <h6 class="text-uppercase font-weight-bold">
-                 <a href="https://devteamit.com/legal/bp.html" class="text-white">Made with love</a>
-               </h6>
-             </div>
-           </div>
-         </section>
-         <hr class="my-5" />
-         <section class="mb-5">
-           <div class="row d-flex justify-content-center">
-             <div class="col-lg-8">
-               <p>The Dev Team Legal. All rights reserved. ©2024</p>
-             </div>
-           </div>
-         </section>
-   
+  
     <script>
       window.addEventListener('scroll', function() {
         const targetSection = document.getElementById('legal');
