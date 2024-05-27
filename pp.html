@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
+
   <body data-bs-theme="dark">
+    <style>
+      .fixed-button {
+        position: fixed;
+        bottom: 20px;
+        left: 80%;
+        margin-left: 100px;
+        transform: translateX(-50%);
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+  
+      .fixed-button a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .fixed-button.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+    <div class="fixed-button">
+      <a href="#legal">Skip to Legal</a>
+    </div>
     <div class="div1">
       <ul class="navigationbar nav nav-underline">
           <li class="nav-item"><a class="nav-link disabled" style="color: #FFFFFF;font-weight: bold;" href="/index.html">Legal            </a></li>
@@ -80,5 +107,108 @@ We are committed to resolving any issues promptly and to your satisfaction. Your
       We are committed to resolving any issues promptly and to your satisfaction.
     </pre>
   </body>
+  <style>
+    .container {
+       max-width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+     }
+   
+    .text-center {
+       text-align: center;
+     }
+    .text-white {
+       color: #ffffff;
+     }
+    .bg-blue-500 {
+       background-color: #3f51b5;
+     }
+   
+   
+    .d-flex {
+       display: flex;
+     }
+    .justify-content-center {
+       justify-content: center;
+     }
+   
+    .text-uppercase {
+       text-transform: uppercase;
+     }
+    .font-weight-bold {
+       font-weight: bold;
+     }
+   
+    .hr {
+       border-top: 1px solid currentColor;
+     }
+   
+    .text-center {
+       text-align: center;
+     }
+   
+   </style>
+   </head>
+   <body>
+   
+   <div class="container my-5">
+     <footer class="text-center text-white bg-blue-500">
+       <div class="container">
+         <section class="mt-5">
+           <div class="row text-center d-flex justify-content-center pt-5">
+             <div class="col-md-2">
+               <h6 class="text-uppercase font-weight-bold">
+                 <a href="https://devteamit.com" class="text-white">Main Site</a>
+               </h6>
+             </div>
+             <div class="col-md-2">
+               <h6 class="text-uppercase font-weight-bold">
+                 <a href="https://devteamit.com/legal" class="text-white">Home</a>
+               </h6>
+             </div>
+             <div class="col-md-2">
+               <h6 class="text-uppercase font-weight-bold">
+                 <a href="https://devteamit.com/legal/pp.html" class="text-white">
+                   Privacy Policy</a>
+               </h6>
+             </div>
+             <div class="col-md-2">
+               <h6 class="text-uppercase font-weight-bold">
+                 <a href="https://devteamit.com/legal/tos.html" class="text-white">Terms of Service</a>
+               </h6>
+             </div>
+             <div class="col-md-2">
+               <h6 class="text-uppercase font-weight-bold">
+                 <a href="https://devteamit.com/legal/bp.html" class="text-white">Billing Policy</a>
+               </h6>
+             </div>
+           </div>
+         </section>
+         <hr class="my-5" />
+         <section class="mb-5">
+           <div class="row d-flex justify-content-center">
+             <div class="col-lg-8">
+               <p>The Dev Team Legal. All rights reserved. ©2024</p>
+             </div>
+           </div>
+         </section>
+   
+    <script>
+      window.addEventListener('scroll', function() {
+        const targetSection = document.getElementById('legal');
+        const fixedButton = document.querySelector('.fixed-button');
+
+        const targetSectionTop = targetSection.offsetTop;
+        const targetSectionHeight = targetSection.offsetHeight;
+        const windowHeight = window.innerHeight;
+        const scrollPosition = window.pageYOffset;
+
+        if (scrollPosition > targetSectionTop - windowHeight + targetSectionHeight / 2) {
+          fixedButton.classList.add('hidden');
+        } else {
+          fixedButton.classList.remove('hidden');
+        }
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
