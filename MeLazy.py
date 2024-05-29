@@ -1,6 +1,8 @@
 import os
+""" Aight, so basically heres what this does. Im very lazy, and had 300 and something line file. 
+I needed to find specific line and change that with something else for 28 things to make 
+a table of contents link up properly. Maybe you could re-use this? Idk."""
 
-# Open the file and read its contents
 with open("./tos.html", "r") as f:
     lines = f.readlines()
 
@@ -69,13 +71,10 @@ ids = [
 newdoc = ""
 index = 0
 
-# Iterate over each line in the file
 for line in lines:
-    # Ensure we don't exceed the list bounds
     if index >= len(topics):
         break
     
-    # Check if the topic is found in the current line
     if "<p><strong>" + topics[index] + "</strong></p>" in line:
         # Replace the topic with the modified version including the id
         line = line.replace("<p><strong>" + topics[index] + "</strong></p>", "<p id=\"" + ids[index] + "\"><strong>" + topics[index] + "</strong></p>")
@@ -83,7 +82,6 @@ for line in lines:
         print(line)
         newdoc += line
     else:
-        # Append the original line to newdoc if the topic is not found
         newdoc += line
         print(False)
 
